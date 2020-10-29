@@ -10,5 +10,7 @@ class TelaPrincipal(AbstractTela):
       print("2 - Cliente")
       print("0 - Finalizar Sistema")
     
-      opcao = self.le_numero_inteiro("Escolha a opção: ", [1, 2, 0])
+      opcao = self.le_numero_inteiro("Escolha a opção: ")
       return opcao
+  def avisos(self):
+    pass

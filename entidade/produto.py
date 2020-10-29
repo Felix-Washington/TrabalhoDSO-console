@@ -1,10 +1,17 @@
-class produto():
-  def __init__(self, codigo: int, nome: str, valor: float, quantidade: int):
-    self.__codigo = codigo
-    self.__nome = nome
-    self.__valor = valor
-    self.__quantidade = quantidade
 
+class Produto:
+
+  def __init__(self, codigo: int, nome: str, valor: float, quantidade: int):
+    
+    if isinstance(codigo, int):
+      self.__codigo = codigo
+    if isinstance(nome, str):
+      self.__nome = nome
+    if isinstance(valor, float):
+      self.__valor = valor
+    if isinstance(quantidade, int):
+      self.__quantidade = quantidade
+  
   @property
   def codigo(self):
     return self.__codigo
